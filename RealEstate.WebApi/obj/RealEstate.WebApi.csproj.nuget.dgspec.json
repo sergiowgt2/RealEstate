@@ -4,14 +4,14 @@
     "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj": {
+    "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\RealEstate.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj",
-        "projectName": "RealEstate.WebApi",
-        "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj",
+        "projectUniqueName": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\RealEstate.Domain.csproj",
+        "projectName": "RealEstate.Domain",
+        "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\RealEstate.Domain.csproj",
         "packagesPath": "C:\\Users\\sergio.wellington\\.nuget\\packages\\",
-        "outputPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\obj\\",
+        "outputPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sergio.wellington\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,142 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj",
+        "projectName": "RealEstate.Infra",
+        "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj",
+        "packagesPath": "C:\\Users\\sergio.wellington\\.nuget\\packages\\",
+        "outputPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sergio.wellington\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\RealEstate.Domain.csproj": {
+                "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\RealEstate.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj",
+        "projectName": "RealEstate.WebApi",
+        "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj",
+        "packagesPath": "C:\\Users\\sergio.wellington\\.nuget\\packages\\",
+        "outputPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sergio.wellington\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj": {
+                "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.18, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

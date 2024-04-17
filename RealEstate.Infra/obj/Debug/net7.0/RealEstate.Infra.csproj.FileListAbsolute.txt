@@ -1,0 +1,15 @@
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\obj\Debug\net7.0\RealEstate.Infra.csproj.AssemblyReference.cache
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\obj\Debug\net7.0\RealEstate.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\obj\Debug\net7.0\RealEstate.Infra.AssemblyInfoInputs.cache
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\obj\Debug\net7.0\RealEstate.Infra.AssemblyInfo.cs
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\obj\Debug\net7.0\RealEstate.Infra.csproj.CoreCompileInputs.cache
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\bin\Debug\net7.0\RealEstate.Infra.deps.json
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\bin\Debug\net7.0\RealEstate.Infra.dll
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\bin\Debug\net7.0\RealEstate.Infra.pdb
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\bin\Debug\net7.0\RealEstate.Domain.dll
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\bin\Debug\net7.0\RealEstate.Domain.pdb
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\obj\Debug\net7.0\RealEstate.Infra.csproj.CopyComplete
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\obj\Debug\net7.0\RealEstate.Infra.dll
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\obj\Debug\net7.0\refint\RealEstate.Infra.dll
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\obj\Debug\net7.0\RealEstate.Infra.pdb
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\obj\Debug\net7.0\ref\RealEstate.Infra.dll
