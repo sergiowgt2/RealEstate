@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Service\\RealEstate.Service.csproj": {}
+    "C:\\Users\\pedro.rodrigues\\source\\repos\\sergiowgt2\\RealEstate\\RealEstate.Service\\RealEstate.Service.csproj": {}
   },
   "projects": {
-    "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Service\\RealEstate.Service.csproj": {
+    "C:\\Users\\pedro.rodrigues\\source\\repos\\sergiowgt2\\RealEstate\\RealEstate.Service\\RealEstate.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Service\\RealEstate.Service.csproj",
+        "projectUniqueName": "C:\\Users\\pedro.rodrigues\\source\\repos\\sergiowgt2\\RealEstate\\RealEstate.Service\\RealEstate.Service.csproj",
         "projectName": "RealEstate.Service",
-        "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Service\\RealEstate.Service.csproj",
-        "packagesPath": "C:\\Users\\sergio.wellington\\.nuget\\packages\\",
-        "outputPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Service\\obj\\",
+        "projectPath": "C:\\Users\\pedro.rodrigues\\source\\repos\\sergiowgt2\\RealEstate\\RealEstate.Service\\RealEstate.Service.csproj",
+        "packagesPath": "C:\\Users\\pedro.rodrigues\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedro.rodrigues\\source\\repos\\sergiowgt2\\RealEstate\\RealEstate.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sergio.wellington\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pedro.rodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\pedro.rodrigues\\.dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }

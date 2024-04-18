@@ -1,12 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.WebApi", "RealEstate.WebApi\RealEstate.WebApi.csproj", "{22211275-0940-4AC2-BACA-8DD3C794F34A}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstate.WebApi", "RealEstate.WebApi\RealEstate.WebApi.csproj", "{22211275-0940-4AC2-BACA-8DD3C794F34A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.Domain", "RealEstate.Domain\RealEstate.Domain.csproj", "{267BED90-F1D5-4432-9A6B-03CDEADE5C76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstate.Domain", "RealEstate.Domain\RealEstate.Domain.csproj", "{267BED90-F1D5-4432-9A6B-03CDEADE5C76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.Infra", "RealEstate.Infra\RealEstate.Infra.csproj", "{FA4A0F51-522D-4E19-9EBD-A2422087FA35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstate.Infra", "RealEstate.Infra\RealEstate.Infra.csproj", "{FA4A0F51-522D-4E19-9EBD-A2422087FA35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.Service", "RealEstate.Service\RealEstate.Service.csproj", "{9DEEC964-02CC-4579-A694-3E28B604BE06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstate.Service", "RealEstate.Service\RealEstate.Service.csproj", "{9DEEC964-02CC-4579-A694-3E28B604BE06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{CB792224-333E-47E2-94CA-F611467480DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +35,15 @@ Global
 		{9DEEC964-02CC-4579-A694-3E28B604BE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DEEC964-02CC-4579-A694-3E28B604BE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DEEC964-02CC-4579-A694-3E28B604BE06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB792224-333E-47E2-94CA-F611467480DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB792224-333E-47E2-94CA-F611467480DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB792224-333E-47E2-94CA-F611467480DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB792224-333E-47E2-94CA-F611467480DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {141BA51E-95FA-4B28-AE4F-D7688BED8F66}
 	EndGlobalSection
 EndGlobal

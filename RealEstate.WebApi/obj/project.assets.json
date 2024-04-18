@@ -867,6 +867,9 @@
       "RealEstate.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.18"
+        },
         "compile": {
           "bin/placeholder/RealEstate.Domain.dll": {}
         },
@@ -2608,24 +2611,25 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Microsoft.EntityFrameworkCore >= 7.0.18",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.18",
       "RealEstate.Infra >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sergio.wellington\\.nuget\\packages\\": {}
+    "C:\\Users\\pedro.rodrigues\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\pedro.rodrigues\\source\\repos\\sergiowgt2\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj",
       "projectName": "RealEstate.WebApi",
-      "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj",
-      "packagesPath": "C:\\Users\\sergio.wellington\\.nuget\\packages\\",
-      "outputPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\obj\\",
+      "projectPath": "C:\\Users\\pedro.rodrigues\\source\\repos\\sergiowgt2\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj",
+      "packagesPath": "C:\\Users\\pedro.rodrigues\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pedro.rodrigues\\source\\repos\\sergiowgt2\\RealEstate\\RealEstate.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sergio.wellington\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pedro.rodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2639,8 +2643,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj": {
-              "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj"
+            "C:\\Users\\pedro.rodrigues\\source\\repos\\sergiowgt2\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj": {
+              "projectPath": "C:\\Users\\pedro.rodrigues\\source\\repos\\sergiowgt2\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj"
             }
           }
         }
@@ -2655,6 +2659,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.18, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -2681,7 +2689,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\pedro.rodrigues\\.dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
       }
     }
   }
