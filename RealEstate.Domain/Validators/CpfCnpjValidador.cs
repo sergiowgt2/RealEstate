@@ -2,9 +2,9 @@
 
 namespace RealEstate.Domain.Validators;
 
-public static class CpjCnpjValidador
+public static class CpfCnpjValidador
 {
-    private static bool Validate(string toValidate)
+    public static bool Validate(string toValidate)
     {
         toValidate = Regex.Replace(toValidate, "[^0-9]", "");
         var regex = new Regex(@"^\d{11}$|^\d{14}$");
