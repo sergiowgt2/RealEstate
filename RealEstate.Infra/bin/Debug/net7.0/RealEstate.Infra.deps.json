@@ -454,6 +454,9 @@
         }
       },
       "RealEstate.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.18"
+        },
         "runtime": {
           "RealEstate.Domain.dll": {}
         }

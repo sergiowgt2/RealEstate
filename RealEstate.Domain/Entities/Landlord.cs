@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using RealEstate.Domain.Entities.Base;
+using RealEstate.Domain.Exceptions;
 
 namespace RealEstate.Domain.Entities;
 
@@ -11,4 +12,9 @@ public class Landlord: BaseEntity
     public string CellPhone { get; set; }
     [MaxLength(100)]
     public string Email { get; set; }
+
+    public override void Validate()
+    {
+        
+    }
 }
