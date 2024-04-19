@@ -16,7 +16,7 @@ public class LandLordRepository : NamedBaseEntityRepository<Landlord>, ILandLord
     
     public async Task<Landlord> GetByCpfCnpj(string cpfCnpj, Guid? excId)
     {
-        Expression<Func<Landlord, bool>> condition = x => x.CpfCnpj == cpfCnpj && x.Status != EntityStatusEnum.Deleted;
+        Expression<Func<Landlord, bool>> condition = x => x.CNPJ_CPF == cpfCnpj && x.Status != EntityStatusEnum.Deleted;
         if (excId == null)
             condition = x => condition.Compile()(x) && x.Id != excId;
         
