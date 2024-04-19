@@ -1,6 +1,5 @@
 ﻿using RealEstate.Domain.Entities;
 using RealEstate.Domain.Exceptions;
-using RealEstate.Domain.Validators;
 
 namespace RealEstate.Tests.Unit
 {
