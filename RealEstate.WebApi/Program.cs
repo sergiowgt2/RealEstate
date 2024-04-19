@@ -25,20 +25,19 @@ builder.Services.AddScoped<LandLordService>();
 builder.Services.AddSingleton<IMapper>(mapper);
 
 var app = builder.Build();
-var landLordInsertModel = new LandLordInsertModel()
+var landLordInsertModel = new LandlordInsertModel()
 {
-    Name = "Pedro",
-    Email = "pedro@gmail.com",
-    CellPhone = "Cellphone",
-    CpfCnpj = "Cpf",
-    CreatedBy = "Sergio"
+    Name = "Pedro2",
+    Email = "pedro2@gmail.com",
+    CellPhone = "Cellphone2",
+    CpfCnpj = "Cpf"
 };
 
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var service = services.GetRequiredService<LandLordService>();
-    await service.Insert(landLordInsertModel);
+    await service.Insert(landLordInsertModel, "Sergio");
 }
 
 //app.MapGet("/", () => "Hello World!");

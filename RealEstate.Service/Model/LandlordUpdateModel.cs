@@ -2,8 +2,9 @@
 
 namespace RealEstate.Service.Model;
 
-public class TenantInsertModel : BaseModel 
+public class LandlordUpdateModel : BaseModel
 {
+    public Guid Id { get; set; }
     public string CpfCnpj { get; set; }
     public string CellPhone { get; set; }
     public string Email { get; set; }

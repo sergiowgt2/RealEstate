@@ -6,7 +6,7 @@ public class MappingProfile : Profile
 {
     public MappingProfile()
     {
-        CreateMap<LandLordInsertModel, Landlord>();
+        CreateMap<LandlordInsertModel, Landlord>();
     }
 }
 

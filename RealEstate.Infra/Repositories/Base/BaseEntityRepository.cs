@@ -16,11 +16,11 @@ public class BaseEntityRepository<TEntity> : IBaseEntityRepository<TEntity> wher
         Context = db;
     }
 
-    protected async Task<TEntity> FirstAsync(Expression<Func<TEntity, bool>> condition) =>
-        await Context.Set<TEntity>().FirstOrDefaultAsync(condition);
+    protected async Task<TEntity> FirstAsync(Expression<Func<TEntity, bool>> filter) =>
+        await Context.Set<TEntity>().FirstOrDefaultAsync(filter);
 
-    protected async Task<IEnumerable<TEntity>> ListAsync(Expression<Func<TEntity, bool>> condition) =>
-        await Context.Set<TEntity>().Where(condition).ToListAsync();
+    protected async Task<IEnumerable<TEntity>> ListAsync(Expression<Func<TEntity, bool>> filter) =>
+        await Context.Set<TEntity>().Where(filter).ToListAsync();
     
     public async Task<TEntity> Get(Guid id) => 
         await FirstAsync(x => x.Id == id && x.Status != EntityStatusEnum.Deleted);

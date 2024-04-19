@@ -16,29 +16,36 @@ public class LandLordRepository : NamedBaseEntityRepository<Landlord>, ILandLord
     
     public async Task<Landlord> GetByCpfCnpj(string cpfCnpj, Guid? excId)
     {
-        Expression<Func<Landlord, bool>> condition = x => x.CpfCnpj == cpfCnpj && x.Status != EntityStatusEnum.Deleted;
+        Expression<Func<Landlord, bool>> condition;
+        
         if (excId == null)
-            condition = x => condition.Compile()(x) && x.Id != excId;
+            condition = x => x.CpfCnpj == cpfCnpj && x.Status != EntityStatusEnum.Deleted;
+        else 
+            condition = x => x.CpfCnpj == cpfCnpj && x.Status != EntityStatusEnum.Deleted && x.Id != excId;
         
         return await FirstAsync(condition);
     }
 
     public async Task<Landlord> GetByEmail(string email, Guid? excId)
     {
-        Expression<Func<Landlord, bool>> condition = x => x.Email == email && x.Status != EntityStatusEnum.Deleted;
+        Expression<Func<Landlord, bool>> condition;
         
         if (excId == null)
-            condition = x => condition.Compile()(x) && x.Id != excId;
+            condition = x => x.Email == email && x.Status != EntityStatusEnum.Deleted;
+        else 
+            condition = x => x.Email == email && x.Status != EntityStatusEnum.Deleted && x.Id != excId;
         
         return await FirstAsync(condition);
     }
 
     public async Task<Landlord> GetByCellPhone(string cellPhone, Guid? excId)
     {
-        Expression<Func<Landlord, bool>> condition = x => x.CellPhone == cellPhone && x.Status != EntityStatusEnum.Deleted;
+        Expression<Func<Landlord, bool>> condition;
         
         if (excId == null)
-            condition = x => condition.Compile()(x) && x.Id != excId;
+            condition = x => x.CellPhone == cellPhone && x.Status != EntityStatusEnum.Deleted;
+        else 
+            condition = x => x.CellPhone == cellPhone && x.Status != EntityStatusEnum.Deleted && x.Id != excId;
         
         return await FirstAsync(condition);
     }

@@ -15,11 +15,13 @@ public class NamedBaseEntityRepository<TEntity> : BaseEntityRepository<TEntity>,
 
     public async Task<TEntity> GetByName(string name, Guid? excId = null)
     {
-        Expression<Func<TEntity, bool>> condition = x => x.Name == name && x.Status != EntityStatusEnum.Deleted;
-        
+        Expression<Func<TEntity, bool>> filter;
         if (excId == null)
-            condition = x => condition.Compile()(x) && x.Id != excId;
+            filter = x => x.Name == name && x.Status != EntityStatusEnum.Deleted;
+        else 
+            filter = x => x.Name == name && x.Status != EntityStatusEnum.Deleted && x.Id != excId;
         
-        return await Context.Set<TEntity>().FirstAsync(condition);
+        return await FirstAsync(filter);
     }
 }
+

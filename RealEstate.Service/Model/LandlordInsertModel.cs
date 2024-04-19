@@ -2,7 +2,7 @@
 
 namespace RealEstate.Service.Model;
 
-public class LandLordInsertModel : InsertBaseModel 
+public class LandlordInsertModel : BaseModel 
 {
     public string CpfCnpj { get; set; }
     public string CellPhone { get; set; }
