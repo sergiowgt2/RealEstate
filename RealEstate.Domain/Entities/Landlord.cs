@@ -9,7 +9,7 @@ namespace RealEstate.Domain.Entities;
 public class Landlord: NamedBaseEntity
 {
     [MaxLength(14)]
-    public string CpfCnpj { get; set; }
+    public string CNPJ_CPF { get; set; }
     [MaxLength(14)]
     public string CellPhone { get; set; }
     [MaxLength(100)]
@@ -18,8 +18,8 @@ public class Landlord: NamedBaseEntity
     public override void Validate()
     {
         base.Validate();
-        DomainException.When(String.IsNullOrWhiteSpace(CpfCnpj), "CPF/CNPJ cannot be empty!");
-        DomainException.When((CpfCnpjValidador.Validate(CpfCnpj) != true), "CPF/CNPJ is invalid!");
+        DomainException.When(String.IsNullOrWhiteSpace(CNPJ_CPF), "CPF/CNPJ cannot be empty!");
+        DomainException.When((CpfCnpjValidador.Validate(CNPJ_CPF) != true), "CPF/CNPJ is invalid!");
         DomainException.When((CellphoneValidator.Validate(CellPhone) != true), "Cellphone is invalid!");
         DomainException.When((EmailValidador.Validate(Email) != true), "Email is invalid!");
         

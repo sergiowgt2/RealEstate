@@ -11,11 +11,12 @@ namespace RealEstate.Tests.Unit
         {
             var landlord = new Landlord
             {
+                Name = "Pedro",
                 CreatedAt = DateTime.Now,
                 CreatedBy = "ALGO",
                 UpdatedAt = DateTime.Now,
                 UpdatedBy = "ALGO",
-                CpfCnpj = ""
+                CNPJ_CPF = ""
             };
             var exception = Assert.Throws<DomainException>(() => landlord.Validate());
             Assert.Equal("CPF/CNPJ cannot be empty!", exception.Message);
@@ -26,11 +27,12 @@ namespace RealEstate.Tests.Unit
         {
             var landlord = new Landlord
             {
+                Name = "Pedro",
                 CreatedAt = DateTime.Now,
                 CreatedBy = "ALGO",
                 UpdatedAt = DateTime.Now,
                 UpdatedBy = "ALGO",
-                CpfCnpj = "11"
+                CNPJ_CPF = "11"
             };
             var exception = Assert.Throws<DomainException>(() => landlord.Validate());
             Assert.Equal("CPF/CNPJ is invalid!", exception.Message);
@@ -41,11 +43,12 @@ namespace RealEstate.Tests.Unit
         {
             var landlord = new Landlord
             {
+                Name = "Pedro",
                 CreatedAt = DateTime.Now,
                 CreatedBy = "ALGO",
                 UpdatedAt = DateTime.Now,
                 UpdatedBy = "ALGO",
-                CpfCnpj = "12345678910",
+                CNPJ_CPF = "12345678910",
                 CellPhone = "11"
             };
             var exception = Assert.Throws<DomainException>(() => landlord.Validate());
@@ -57,11 +60,12 @@ namespace RealEstate.Tests.Unit
         {
             var landlord = new Landlord
             {
+                Name = "Pedro",
                 CreatedAt = DateTime.Now,
                 CreatedBy = "ALGO",
                 UpdatedAt = DateTime.Now,
                 UpdatedBy = "ALGO",
-                CpfCnpj = "12345678910",
+                CNPJ_CPF = "12345678910",
                 CellPhone = "21989593059",
                 Email = ""
             };
@@ -74,11 +78,12 @@ namespace RealEstate.Tests.Unit
         {
             var landlord = new Landlord
             {
+                Name = "Pedro",
                 CreatedAt = DateTime.Now,
                 CreatedBy = "ALGO",
                 UpdatedAt = DateTime.Now,
                 UpdatedBy = "ALGO",
-                CpfCnpj = "12345678910",
+                CNPJ_CPF = "12345678910",
                 CellPhone = "21989593059",
                 Email = "test@gmail.com"
             };
