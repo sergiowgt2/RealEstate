@@ -11,7 +11,7 @@ using RealEstate.Infra.Database;
 namespace RealEstate.Infra.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240418164115_InitialCreate")]
+    [Migration("20240419132002_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -47,6 +47,11 @@ namespace RealEstate.Infra.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");

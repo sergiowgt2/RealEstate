@@ -454,10 +454,20 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.18",
           "MySql.EntityFrameworkCore": "7.0.14",
-          "RealEstate.Domain": "1.0.0"
+          "RealEstate.Domain": "1.0.0",
+          "RealEstate.Service": "1.0.0"
         },
         "runtime": {
           "RealEstate.Infra.dll": {}
+        }
+      },
+      "RealEstate.Service/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.18",
+          "RealEstate.Domain": "1.0.0"
+        },
+        "runtime": {
+          "RealEstate.Service.dll": {}
         }
       }
     }
@@ -831,6 +841,11 @@
       "sha512": ""
     },
     "RealEstate.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RealEstate.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -48,6 +48,11 @@ namespace RealEstate.Infra.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
                     b.Property<byte>("Status")
                         .HasColumnType("tinyint unsigned");
 

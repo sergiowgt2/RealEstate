@@ -1,5 +1,14 @@
 using Microsoft.EntityFrameworkCore;
+using RealEstate.Domain.Entities;
+using RealEstate.Domain.Entities.Base;
 using RealEstate.Infra.Database;
+using RealEstate.Infra.Repositories;
+using RealEstate.Infra.Repositories.Base;
+using RealEstate.Service.Interfaces;
+using RealEstate.Service.Model;
+using RealEstate.Service.Model.Base;
+using RealEstate.Service.Services;
+using RealEstate.Service.Services.Base;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,13 +20,61 @@ Console.WriteLine(builder.Configuration.GetConnectionString("DefaultConnection")
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-//builder.Services.AddScoped<DentistTypeRepository>();
-//builder.Services.AddScoped<SpecialtyTypeRepository>();
-//builder.Services.AddScoped<DentistRepository>();
+
+//builder.Services.AddScoped<IBaseEntityRepository<BaseEntity>, BaseEntityRepository<BaseEntity>>();
+//builder.Services.AddScoped<INamedBaseEntityRepository<NamedBaseEntity>, NamedBaseEntityRepository<NamedBaseEntity>>();
+//builder.Services.AddScoped<LandLordRepository>();
+//builder.Services.AddScoped<IBaseService<BaseEntity, BaseModel>,BaseService<BaseEntity, BaseModel>>();
+//builder.Services.AddScoped<LandLordService>();
 
 var app = builder.Build();
+var landLordInsertModel = new LandLordInsertModel()
+{
+    Name = "Pedro",
+    Email = "pedro@gmail.com",
+    CellPhone = "Cellphone",
+    CpfCnpj = "Cpf",
+    CreatedBy = "Sergio"
+};
+
+var tenantInserModel = new TenantInsertModel()
+{    
+    Name = "Pedro",
+    Email = "pedro@gmail.com",
+    CellPhone = "Cellphone",
+    CpfCnpj = "Cpf",
+    CreatedBy = "Sergio"
+}
+
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    var repo = new LandLordRepository(context);
+    var service = new LandLordService(repo);
+    await service.Add(landLordInsertModel);
+}
+
 
 /*
+var landLord = new Landlord
+{
+    Id = new Guid(),
+    CellPhone = "CellPhone",
+    CpfCnpj = "CpfCnpj",
+    Name = "Name",
+    Email = "sergio@gmail.com",
+    CreatedAt = DateTime.Now,
+    CreatedBy = "Sergio"
+};
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var _repo = services.GetRequiredService<LandLordRepository>();
+    await _repo.Add(landLord);
+}
+
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -65,3 +122,6 @@ app.Run();
 // donet ef database update InitialCreate --verbose --project dentalRJ.infra --startup-project RJDental.WebApp
 // dotnet ef migrations remove InitialCreate --verbose --project dentalRJ.infra --startup-project RJDental.WebApp
 // dotnet ef database update 0  --verbose --project dentalRJ.infra --startup-project RJDental.WebApp
+
+
+

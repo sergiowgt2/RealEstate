@@ -4,7 +4,7 @@ using RealEstate.Domain.Exceptions;
 
 namespace RealEstate.Domain.Entities;
 
-public class Landlord: BaseEntity
+public class Landlord: NamedBaseEntity
 {
     [MaxLength(14)]
     public string CpfCnpj { get; set; }

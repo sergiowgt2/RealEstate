@@ -124,3 +124,5 @@ C:\Users\pedro.rodrigues\source\repos\sergiowgt2\RealEstate\RealEstate.WebApi\ob
 C:\Users\pedro.rodrigues\source\repos\sergiowgt2\RealEstate\RealEstate.WebApi\obj\Debug\net7.0\RealEstate.WebApi.pdb
 C:\Users\pedro.rodrigues\source\repos\sergiowgt2\RealEstate\RealEstate.WebApi\obj\Debug\net7.0\RealEstate.WebApi.genruntimeconfig.cache
 C:\Users\pedro.rodrigues\source\repos\sergiowgt2\RealEstate\RealEstate.WebApi\obj\Debug\net7.0\ref\RealEstate.WebApi.dll
+C:\trabalho\RealEstate\RealEstate\RealEstate.WebApi\bin\Debug\net7.0\RealEstate.Service.dll
+C:\trabalho\RealEstate\RealEstate\RealEstate.WebApi\bin\Debug\net7.0\RealEstate.Service.pdb

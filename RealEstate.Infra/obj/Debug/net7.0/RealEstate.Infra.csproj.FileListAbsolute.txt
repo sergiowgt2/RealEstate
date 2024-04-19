@@ -28,3 +28,5 @@ C:\Users\pedro.rodrigues\source\repos\sergiowgt2\RealEstate\RealEstate.Infra\obj
 C:\Users\pedro.rodrigues\source\repos\sergiowgt2\RealEstate\RealEstate.Infra\obj\Debug\net7.0\refint\RealEstate.Infra.dll
 C:\Users\pedro.rodrigues\source\repos\sergiowgt2\RealEstate\RealEstate.Infra\obj\Debug\net7.0\RealEstate.Infra.pdb
 C:\Users\pedro.rodrigues\source\repos\sergiowgt2\RealEstate\RealEstate.Infra\obj\Debug\net7.0\ref\RealEstate.Infra.dll
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\bin\Debug\net7.0\RealEstate.Service.dll
+C:\trabalho\RealEstate\RealEstate\RealEstate.Infra\bin\Debug\net7.0\RealEstate.Service.pdb
