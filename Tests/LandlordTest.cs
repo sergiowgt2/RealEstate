@@ -15,7 +15,7 @@ namespace RealEstate.Tests.Unit
                 CreatedBy = "ALGO",
                 UpdatedAt = DateTime.Now,
                 UpdatedBy = "ALGO",
-                CNPJ_CPF = ""
+                CnpjCpf = ""
             };
             var exception = Assert.Throws<DomainException>(() => landlord.Validate());
             Assert.Equal("CPF/CNPJ cannot be empty!", exception.Message);
@@ -31,7 +31,7 @@ namespace RealEstate.Tests.Unit
                 CreatedBy = "ALGO",
                 UpdatedAt = DateTime.Now,
                 UpdatedBy = "ALGO",
-                CNPJ_CPF = "11"
+                CnpjCpf = "11"
             };
             var exception = Assert.Throws<DomainException>(() => landlord.Validate());
             Assert.Equal("CPF/CNPJ is invalid!", exception.Message);
@@ -47,7 +47,7 @@ namespace RealEstate.Tests.Unit
                 CreatedBy = "ALGO",
                 UpdatedAt = DateTime.Now,
                 UpdatedBy = "ALGO",
-                CNPJ_CPF = "12345678910",
+                CnpjCpf = "12345678910",
                 CellPhone = "11"
             };
             var exception = Assert.Throws<DomainException>(() => landlord.Validate());
@@ -64,7 +64,7 @@ namespace RealEstate.Tests.Unit
                 CreatedBy = "ALGO",
                 UpdatedAt = DateTime.Now,
                 UpdatedBy = "ALGO",
-                CNPJ_CPF = "12345678910",
+                CnpjCpf = "12345678910",
                 CellPhone = "21989593059",
                 Email = ""
             };
@@ -82,7 +82,7 @@ namespace RealEstate.Tests.Unit
                 CreatedBy = "ALGO",
                 UpdatedAt = DateTime.Now,
                 UpdatedBy = "ALGO",
-                CNPJ_CPF = "12345678910",
+                CnpjCpf = "12345678910",
                 CellPhone = "21989593059",
                 Email = "test@gmail.com"
             };

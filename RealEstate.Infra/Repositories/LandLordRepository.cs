@@ -19,9 +19,9 @@ public class LandLordRepository : NamedBaseEntityRepository<Landlord>, ILandLord
         Expression<Func<Landlord, bool>> condition;
         
         if (excId == null)
-            condition = x => x.CNPJ_CPF == cpfCnpj && x.Status != EntityStatusEnum.Deleted;
+            condition = x => x.CnpjCpf == cpfCnpj && x.Status != EntityStatusEnum.Deleted;
         else 
-            condition = x => x.CNPJ_CPF == cpfCnpj && x.Status != EntityStatusEnum.Deleted && x.Id != excId;
+            condition = x => x.CnpjCpf == cpfCnpj && x.Status != EntityStatusEnum.Deleted && x.Id != excId;
         
         return await FirstAsync(condition);
     }

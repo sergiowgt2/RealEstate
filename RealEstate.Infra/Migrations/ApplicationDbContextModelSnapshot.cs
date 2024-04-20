@@ -30,7 +30,7 @@ namespace RealEstate.Infra.Migrations
                         .HasMaxLength(14)
                         .HasColumnType("varchar(14)");
 
-                    b.Property<string>("CpfCnpj")
+                    b.Property<string>("CnpjCpf")
                         .IsRequired()
                         .HasMaxLength(14)
                         .HasColumnType("varchar(14)");
@@ -94,7 +94,7 @@ namespace RealEstate.Infra.Migrations
                     b.Property<float>("RentValue")
                         .HasColumnType("float");
 
-                    b.Property<Guid>("RentalProperty")
+                    b.Property<Guid>("RentalPropertyId")
                         .HasColumnType("char(36)");
 
                     b.Property<DateOnly>("SignDate")
@@ -106,7 +106,7 @@ namespace RealEstate.Infra.Migrations
                     b.Property<byte>("Status")
                         .HasColumnType("tinyint unsigned");
 
-                    b.Property<Guid>("Tenant")
+                    b.Property<Guid>("TenantId")
                         .HasColumnType("char(36)");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -117,6 +117,10 @@ namespace RealEstate.Infra.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("RentalPropertyId");
+
+                    b.HasIndex("TenantId");
 
                     b.ToTable("LeaseContract");
                 });
@@ -140,7 +144,7 @@ namespace RealEstate.Infra.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
-                    b.Property<Guid>("LandLord")
+                    b.Property<Guid>("LandlordId")
                         .HasColumnType("char(36)");
 
                     b.Property<string>("NickName")
@@ -163,6 +167,8 @@ namespace RealEstate.Infra.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("LandlordId");
+
                     b.ToTable("RentalProperty");
                 });
 
@@ -172,12 +178,12 @@ namespace RealEstate.Infra.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
-                    b.Property<string>("CNPJ_CPF")
+                    b.Property<string>("CellPhone")
                         .IsRequired()
                         .HasMaxLength(14)
                         .HasColumnType("varchar(14)");
 
-                    b.Property<string>("CellPhone")
+                    b.Property<string>("CnpjCpf")
                         .IsRequired()
                         .HasMaxLength(14)
                         .HasColumnType("varchar(14)");
@@ -213,6 +219,51 @@ namespace RealEstate.Infra.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Tenant");
+                });
+
+            modelBuilder.Entity("RealEstate.Domain.Entities.LeaseContract", b =>
+                {
+                    b.HasOne("RealEstate.Domain.Entities.RentalProperty", "RentalProperty")
+                        .WithMany("LeaseContracts")
+                        .HasForeignKey("RentalPropertyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RealEstate.Domain.Entities.Tenant", "Tenant")
+                        .WithMany("LeaseContracts")
+                        .HasForeignKey("TenantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("RentalProperty");
+
+                    b.Navigation("Tenant");
+                });
+
+            modelBuilder.Entity("RealEstate.Domain.Entities.RentalProperty", b =>
+                {
+                    b.HasOne("RealEstate.Domain.Entities.Landlord", "Landlord")
+                        .WithMany("RentalProperties")
+                        .HasForeignKey("LandlordId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Landlord");
+                });
+
+            modelBuilder.Entity("RealEstate.Domain.Entities.Landlord", b =>
+                {
+                    b.Navigation("RentalProperties");
+                });
+
+            modelBuilder.Entity("RealEstate.Domain.Entities.RentalProperty", b =>
+                {
+                    b.Navigation("LeaseContracts");
+                });
+
+            modelBuilder.Entity("RealEstate.Domain.Entities.Tenant", b =>
+                {
+                    b.Navigation("LeaseContracts");
                 });
 #pragma warning restore 612, 618
         }

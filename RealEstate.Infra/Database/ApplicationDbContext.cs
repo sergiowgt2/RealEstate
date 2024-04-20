@@ -26,6 +26,21 @@ public class ApplicationDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+        
+        modelBuilder.Entity<LeaseContract>()
+            .HasOne(lc => lc.RentalProperty)
+            .WithMany(rp => rp.LeaseContracts)
+            .HasForeignKey(lc => lc.RentalPropertyId);
+
+        modelBuilder.Entity<LeaseContract>()
+            .HasOne(lc => lc.Tenant)
+            .WithMany(t => t.LeaseContracts)
+            .HasForeignKey(lc => lc.TenantId);
+
+        modelBuilder.Entity<RentalProperty>()
+            .HasOne(lc => lc.Landlord)
+            .WithMany(t => t.RentalProperties)
+            .HasForeignKey(lc => lc.LandlordId);
     }
 
 }

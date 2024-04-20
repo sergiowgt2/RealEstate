@@ -5,8 +5,12 @@ namespace RealEstate.Domain.Entities;
 
 public class LeaseContract : BaseEntity
 {
-    public Guid RentalProperty { get; set; }
-    public Guid Tenant { get; set; }
+    public Guid RentalPropertyId { get; set; }
+    public RentalProperty RentalProperty { get; set; }
+    
+    public Guid TenantId { get; set; }
+    public Tenant Tenant { get; set; }
+    
     public DateOnly StartDate { get; set; }
     public DateOnly SignDate { get; set; }
     public DateOnly? EndDate { get; set; }

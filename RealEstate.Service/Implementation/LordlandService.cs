@@ -32,7 +32,7 @@ public class LandLordService : ILandLordService
         ServiceException.When(await _repo.GetByName(toAdd.Name, null) != null, $"Landlord name already exists. [Name={toAdd.Name}]");
         ServiceException.When(await _repo.GetByEmail(toAdd.Email, null) != null, $"Landlord email already exists. [Email={toAdd.Email}]");
         ServiceException.When(await _repo.GetByCellPhone(toAdd.CellPhone, null) != null, $"Landlord CellPhone already exists. [Cellphone={toAdd.CellPhone}]");
-        ServiceException.When(await _repo.GetByCpfCnpj(toAdd.CpfCnpj, null) != null, $"Landlord CpfCnpj already exists. [Cellphone={toAdd.CpfCnpj}]");
+        ServiceException.When(await _repo.GetByCpfCnpj(toAdd.CnpjCpf, null) != null, $"Landlord CpfCnpj already exists. [Cellphone={toAdd.CnpjCpf}]");
         
         var newLandLord = _mapper.Map<LandlordInsertModel, Landlord>(toAdd);
         newLandLord.Status = EntityStatusEnum.Active;

@@ -15,8 +15,4 @@
       <ProjectReference Include="..\RealEstate.Domain\RealEstate.Domain.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Services\Implementation\" />
-    </ItemGroup>
-
 </Project>

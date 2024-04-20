@@ -30,7 +30,7 @@ var landLordInsertModel = new LandlordInsertModel()
     Name = "Pedro2",
     Email = "pedro2@gmail.com",
     CellPhone = "Cellphone2",
-    CpfCnpj = "Cpf"
+    CnpjCpf = "Cpf"
 };
 
 using (var scope = app.Services.CreateScope())
