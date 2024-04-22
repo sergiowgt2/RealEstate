@@ -2476,35 +2476,37 @@
     ]
   },
   "packageFolders": {
-    "/Users/sergio/.nuget/packages/": {}
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sergio/work/RealEstate/RealEstate.Infra/RealEstate.Infra.csproj",
+      "projectUniqueName": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj",
       "projectName": "RealEstate.Infra",
-      "projectPath": "/Users/sergio/work/RealEstate/RealEstate.Infra/RealEstate.Infra.csproj",
-      "packagesPath": "/Users/sergio/.nuget/packages/",
-      "outputPath": "/Users/sergio/work/RealEstate/RealEstate.Infra/obj/",
+      "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj",
+      "packagesPath": "C:\\Users\\sergio.wellington\\.nuget\\packages\\",
+      "outputPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/sergio/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\sergio.wellington\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/sergio/work/RealEstate/RealEstate.Domain/RealEstate.Domain.csproj": {
-              "projectPath": "/Users/sergio/work/RealEstate/RealEstate.Domain/RealEstate.Domain.csproj"
+            "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\RealEstate.Domain.csproj": {
+              "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\RealEstate.Domain.csproj"
             },
-            "/Users/sergio/work/RealEstate/RealEstate.Service/RealEstate.Service.csproj": {
-              "projectPath": "/Users/sergio/work/RealEstate/RealEstate.Service/RealEstate.Service.csproj"
+            "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Service\\RealEstate.Service.csproj": {
+              "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Service\\RealEstate.Service.csproj"
             }
           }
         }
@@ -2544,7 +2546,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
       }
     }
   }
