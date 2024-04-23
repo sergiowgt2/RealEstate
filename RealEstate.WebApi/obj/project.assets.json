@@ -2669,32 +2669,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/luiza/.nuget/packages/": {}
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/luiza/Desktop/Transfero/RealEstate/RealEstate.WebApi/RealEstate.WebApi.csproj",
+      "projectUniqueName": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj",
       "projectName": "RealEstate.WebApi",
-      "projectPath": "/Users/luiza/Desktop/Transfero/RealEstate/RealEstate.WebApi/RealEstate.WebApi.csproj",
-      "packagesPath": "/Users/luiza/.nuget/packages/",
-      "outputPath": "/Users/luiza/Desktop/Transfero/RealEstate/RealEstate.WebApi/obj/",
+      "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\RealEstate.WebApi.csproj",
+      "packagesPath": "C:\\Users\\sergio.wellington\\.nuget\\packages\\",
+      "outputPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/luiza/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\sergio.wellington\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/luiza/Desktop/Transfero/RealEstate/RealEstate.Infra/RealEstate.Infra.csproj": {
-              "projectPath": "/Users/luiza/Desktop/Transfero/RealEstate/RealEstate.Infra/RealEstate.Infra.csproj"
+            "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj": {
+              "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Infra\\RealEstate.Infra.csproj"
             }
           }
         }
@@ -2739,7 +2741,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.407/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
       }
     }
   }

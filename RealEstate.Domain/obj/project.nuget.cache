@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "jFrJyJCzAsQ2WcpCoIm3pGeAT0uwjjeNtNi5BePNobTqMmw7g3sPQsq5DKNfLKH4k58fnwUbMFkvkCj84LalcA==",
+  "dgSpecHash": "4v8/YEA7O5gADTGSDdwH71lGwIPYP8Tdw7xF0A4CtDJY2nJjfVCQeWFdRD3XIN8+VIM2j7Nhk4i2B7TidnqaSA==",
   "success": true,
-  "projectFilePath": "/Users/luiza/Desktop/Transfero/RealEstate/RealEstate.Domain/RealEstate.Domain.csproj",
+  "projectFilePath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\RealEstate.Domain.csproj",
   "expectedPackageFiles": [
-    "/Users/luiza/.nuget/packages/microsoft.entityframeworkcore/7.0.18/microsoft.entityframeworkcore.7.0.18.nupkg.sha512",
-    "/Users/luiza/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.18/microsoft.entityframeworkcore.abstractions.7.0.18.nupkg.sha512",
-    "/Users/luiza/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.18/microsoft.entityframeworkcore.analyzers.7.0.18.nupkg.sha512",
-    "/Users/luiza/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
-    "/Users/luiza/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
-    "/Users/luiza/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
-    "/Users/luiza/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "/Users/luiza/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
-    "/Users/luiza/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
-    "/Users/luiza/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
-    "/Users/luiza/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.18\\microsoft.entityframeworkcore.7.0.18.nupkg.sha512",
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.18\\microsoft.entityframeworkcore.abstractions.7.0.18.nupkg.sha512",
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.18\\microsoft.entityframeworkcore.analyzers.7.0.18.nupkg.sha512",
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\sergio.wellington\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

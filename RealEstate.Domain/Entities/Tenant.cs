@@ -18,11 +18,12 @@ public class Tenant : NamedBaseEntity
 
     public override void Validate()
     {
+        base.Validate();
         DomainException.When(String.IsNullOrWhiteSpace(CnpjCpf), "CPF/CNPJ must not be empty!");
-        DomainException.When(String.IsNullOrWhiteSpace(CellPhone), "Cellphone must not be empty!");
-        DomainException.When(String.IsNullOrWhiteSpace(Email), "Email must not be empty!");
         DomainException.When(CpfCnpjValidador.Validate(CnpjCpf) == false, "CPF/CNPJ is invalid!");
+        DomainException.When(String.IsNullOrWhiteSpace(CellPhone), "Cellphone must not be empty!");
         DomainException.When(CellphoneValidator.Validate(CellPhone) == false, "Cellphone is invalid!");
+        DomainException.When(String.IsNullOrWhiteSpace(Email), "Email must not be empty!");
         DomainException.When(EmailValidador.Validate(Email) == false, "Email is invalid!");
     }
 }

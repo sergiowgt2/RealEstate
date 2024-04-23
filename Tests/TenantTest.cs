@@ -5,114 +5,73 @@ namespace RealEstate.Tests.Unit
 {
     public class TenantTest
     {
+        private Tenant CreateTenant(string cnpjCpf = "", string cellPhone = "", string email = "")
+        {
+            return new Tenant()
+            {
+                /* Já foram testados pela herança */
+                UpdatedAt = null,
+                UpdatedBy = null,
+                CreatedBy = "Ja foi testado",
+                CreatedAt = DateTime.Now,
+                Name = "Já foi testado",
+                /* fim => Já foram testados pela herança */
+                
+                CnpjCpf = cnpjCpf,
+                CellPhone = cellPhone,
+                Email = email,
+                
+            };
+        }
+        
+        
         [Fact]
         public void CpfCnpj_MustNotBeEmpty()
         {
-            var tenant = new Tenant
-            {
-                Name = "Pedro",
-                CreatedAt = DateTime.Now,
-                CreatedBy = "ALGO",
-                UpdatedAt = DateTime.Now,
-                UpdatedBy = "ALGO",
-                CnpjCpf = "",
-                CellPhone = "21989593059",
-                Email = "test@gmail.com"
-            };
+            var tenant = CreateTenant();
             var exception = Assert.Throws<DomainException>(() => tenant.Validate());
             Assert.Equal("CPF/CNPJ must not be empty!", exception.Message);
         }
         
         [Fact]
-        public void Phone_MustNotBeEmpty()
-        {
-            var tenant = new Tenant
-            {
-                Name = "Pedro",
-                CreatedAt = DateTime.Now,
-                CreatedBy = "ALGO",
-                UpdatedAt = DateTime.Now,
-                UpdatedBy = "ALGO",
-                CnpjCpf = "12345678910",
-                CellPhone = "",
-                Email = "test@gmail.com"
-            };
-            var exception = Assert.Throws<DomainException>(() => tenant.Validate());
-            Assert.Equal("Cellphone must not be empty!", exception.Message);
-        }
-        
-        [Fact]
-        public void Email_MustNotBeEmpty()
-        {
-            var tenant = new Tenant
-            {
-                Name = "Pedro",
-                CreatedAt = DateTime.Now,
-                CreatedBy = "ALGO",
-                UpdatedAt = DateTime.Now,
-                UpdatedBy = "ALGO",
-                CnpjCpf = "12345678910",
-                CellPhone = "21989593059",
-                Email = ""
-            };
-            var exception = Assert.Throws<DomainException>(() => tenant.Validate());
-            Assert.Equal("Email must not be empty!", exception.Message);
-        }
-        
-        [Fact]
         public void CpfCnpj_MustBeValid()
         {
-            var tenant = new Tenant
-            {
-                Name = "Pedro",
-                CreatedAt = DateTime.Now,
-                CreatedBy = "ALGO",
-                UpdatedAt = DateTime.Now,
-                UpdatedBy = "ALGO",
-                CnpjCpf = "11",
-                CellPhone = "21989593059",
-                Email = "test@gmail.com"
-            };
+            var tenant = CreateTenant(cnpjCpf:"Algo");
             var exception = Assert.Throws<DomainException>(() => tenant.Validate());
             Assert.Equal("CPF/CNPJ is invalid!", exception.Message);
         }
         
         [Fact]
-        public void Email_MustHaveValidFormat()
+        public void Phone_MustNotBeEmpty()
         {
-            var tenant = new Tenant
-            {
-                Name = "Pedro",
-                CreatedAt = DateTime.Now,
-                CreatedBy = "ALGO",
-                UpdatedAt = DateTime.Now,
-                UpdatedBy = "ALGO",
-                CnpjCpf = "12345678910",
-                CellPhone = "21989593059",
-                Email = "t.com"
-            };
+            var tenant = CreateTenant(cnpjCpf:"01834522757");
             var exception = Assert.Throws<DomainException>(() => tenant.Validate());
-            Assert.Equal("Email is invalid!", exception.Message);
+            Assert.Equal("Cellphone must not be empty!", exception.Message);
         }
         
         [Fact]
         public void Phone_MustHaveValidFormat()
         {
-            var tenant = new Tenant
-            {
-                Name = "Pedro",
-                CreatedAt = DateTime.Now,
-                CreatedBy = "ALGO",
-                UpdatedAt = DateTime.Now,
-                UpdatedBy = "ALGO",
-                CnpjCpf = "12345678910",
-                CellPhone = "21982937469593059",
-                Email = "test@gmail.com"
-            };
+            var tenant = CreateTenant(cnpjCpf:"01834522757", cellPhone:"xxxx");
             var exception = Assert.Throws<DomainException>(() => tenant.Validate());
             Assert.Equal("Cellphone is invalid!", exception.Message);
         }
-    
+        [Fact]
+        public void Email_MustNotBeEmpty()
+        {
+            var tenant = CreateTenant(cnpjCpf:"01834522757", cellPhone:"21964049300");
+            var exception = Assert.Throws<DomainException>(() => tenant.Validate());
+            Assert.Equal("Email must not be empty!", exception.Message);
+        }
+        
+        [Fact]
+        public void Email_MustHaveValidFormat()
+        {
+            
+            var tenant = CreateTenant(cnpjCpf:"01834522757", cellPhone:"21964049300", email:"xxxx");
+            var exception = Assert.Throws<DomainException>(() => tenant.Validate());
+            Assert.Equal("Email is invalid!", exception.Message);
+        }
     } 
 }
 
