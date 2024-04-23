@@ -72,6 +72,14 @@ namespace RealEstate.Tests.Unit
             var exception = Assert.Throws<DomainException>(() => tenant.Validate());
             Assert.Equal("Email is invalid!", exception.Message);
         }
+
+        [Fact]
+        public void Tentant_Tests_Ok()
+        {
+            var tenant = CreateTenant(cnpjCpf: "01834522757", cellPhone: "21964049300", email: "pedro@gmail.com");
+            tenant.Validate();
+            Assert.True(true);
+        }
     } 
 }
 
