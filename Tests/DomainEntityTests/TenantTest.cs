@@ -1,7 +1,7 @@
 using RealEstate.Domain.Entities;
 using RealEstate.Domain.Exceptions;
 
-namespace RealEstate.Tests.Unit
+namespace Tests.DomainEntityTests
 {
     public class TenantTest
     {

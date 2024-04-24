@@ -3,7 +3,7 @@ using RealEstate.Domain.Entities.Base;
 using System;
 using RealEstate.Domain.Exceptions;
 
-namespace RealEstate.Tests.Unit
+namespace Tests.DomainBaseTests
 {
     public class NamedBaseEntityTest
     {
