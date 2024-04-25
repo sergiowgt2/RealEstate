@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\RealEstate.Domain.csproj": {}
+    "/Users/sergio/work/RealEstate/RealEstate.Domain/RealEstate.Domain.csproj": {}
   },
   "projects": {
-    "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\RealEstate.Domain.csproj": {
+    "/Users/sergio/work/RealEstate/RealEstate.Domain/RealEstate.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\RealEstate.Domain.csproj",
+        "projectUniqueName": "/Users/sergio/work/RealEstate/RealEstate.Domain/RealEstate.Domain.csproj",
         "projectName": "RealEstate.Domain",
-        "projectPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\RealEstate.Domain.csproj",
-        "packagesPath": "C:\\Users\\sergio.wellington\\.nuget\\packages\\",
-        "outputPath": "C:\\trabalho\\RealEstate\\RealEstate\\RealEstate.Domain\\obj\\",
+        "projectPath": "/Users/sergio/work/RealEstate/RealEstate.Domain/RealEstate.Domain.csproj",
+        "packagesPath": "/Users/sergio/.nuget/packages/",
+        "outputPath": "/Users/sergio/work/RealEstate/RealEstate.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sergio.wellington\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/sergio/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
         }
       }
     }

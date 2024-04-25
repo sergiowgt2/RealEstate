@@ -1,7 +1,8 @@
-﻿using RealEstate.Domain.Entities;
+﻿using Xunit;
+using RealEstate.Domain.Entities;
 using RealEstate.Domain.Exceptions;
 
-namespace Tests.DomainEntityTests
+namespace Test.RealEstate.Domain.Entities
 {
     public class LandlordTest
     {
